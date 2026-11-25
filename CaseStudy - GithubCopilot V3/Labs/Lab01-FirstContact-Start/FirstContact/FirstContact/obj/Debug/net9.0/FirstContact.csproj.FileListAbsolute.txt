@@ -1,0 +1,14 @@
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\bin\Debug\net9.0\FirstContact.exe
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\bin\Debug\net9.0\FirstContact.deps.json
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\bin\Debug\net9.0\FirstContact.runtimeconfig.json
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\bin\Debug\net9.0\FirstContact.dll
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\bin\Debug\net9.0\FirstContact.pdb
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.AssemblyInfoInputs.cache
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.AssemblyInfo.cs
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.csproj.CoreCompileInputs.cache
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.dll
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\refint\FirstContact.dll
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.pdb
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\FirstContact.genruntimeconfig.cache
+C:\Users\phakk\OneDrive\Desktop\GH-Copilot-for-CSharp\Labs\Lab01-FirstContact-Start\FirstContact\FirstContact\obj\Debug\net9.0\ref\FirstContact.dll

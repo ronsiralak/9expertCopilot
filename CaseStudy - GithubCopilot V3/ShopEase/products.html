@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - ShopEase</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">🛍️ ShopEase</div>
+    <nav class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="products-page">
+    <div class="products-header">
+      <h1>Our Products</h1>
+      <div class="filter-bar">
+        <input type="text" id="search-input" placeholder="Search products..." />
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="books">Books</option>
+        </select>
+        <select id="sort-filter">
+          <option value="default">Sort by</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name A-Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-grid" id="product-grid">
+      <!-- Products rendered by JavaScript -->
+    </div>
+  </main>
+
+  <script src="src/products.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
