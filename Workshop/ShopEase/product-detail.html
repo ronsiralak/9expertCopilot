@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details - ShopEase</title>
+  <script src="src/theme.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="navbar">
+    <div class="navbar-brand">🛍️ ShopEase</div>
+    <nav class="navbar-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="wishlist.html">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="admin.html">Admin</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">🌙 Dark mode</button>
+    </nav>
+  </header>
+
+  <main class="product-detail-page" id="main-content" tabindex="-1">
+    <a class="product-detail-back" href="products.html">← Back to Products</a>
+    <div id="product-detail">
+      <p role="status">Loading product details...</p>
+    </div>
+
+    <section class="product-detail-section" id="reviews-section" hidden>
+      <h2>Customer Reviews</h2>
+      <div class="review-summary" id="product-review-summary"></div>
+      <p class="review-note" id="product-review-note"></p>
+    </section>
+
+    <section class="product-detail-section" id="related-section" hidden>
+      <h2>Related Products</h2>
+      <div class="product-grid" id="related-products"></div>
+    </section>
+  </main>
+
+  <div id="app-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="src/app.js"></script>
+  <script src="src/wishlist.js"></script>
+  <script src="src/api.js"></script>
+  <script src="src/products.js"></script>
+  <script src="src/product-detail.js"></script>
+</body>
+</html>

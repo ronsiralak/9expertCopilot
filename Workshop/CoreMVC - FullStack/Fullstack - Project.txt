@@ -1,0 +1,229 @@
+Fullstack - Project
+
+Step 0 : ตรวจสอบว่า Agent อ่านไฟล์ MD ได้หรือไม่
+
+Prompt
+
+Read and summarize the following repository guidance:
+
+- AGENTS.md
+- .github/copilot-instructions.md
+- .github/instructions/*.instructions.md
+
+Explain:
+
+1. Architecture
+2. Coding standards
+3. Backend conventions
+4. Frontend conventions
+5. Testing requirements
+
+Do not generate code yet.
+
+ผลลัพธ์ที่คาดหวัง
+
+Agent สรุป Clean Architecture
+รู้ว่าต้องใช้ DTO
+รู้ว่าต้องใช้ xUnit
+รู้ว่าต้องใช้ React TypeScript
+
+-------------------------------------------------------------
+
+Step 1 : สร้าง Solution Structure
+
+Prompt
+
+Create the initial solution structure following all repository instructions.
+
+Project Name: CustomerPortal
+
+Backend:
+- ASP.NET Core 8
+- Clean Architecture
+
+Frontend:
+- React TypeScript
+
+Create folders, projects, references, and solution structure only.
+
+Do not implement business features yet.
+
+Explain every generated project.
+
+ผลลัพธ์ที่คาดหวัง
+
+src/
+ ├── CustomerPortal.Domain
+ ├── CustomerPortal.Application
+ ├── CustomerPortal.Infrastructure
+ └── CustomerPortal.WebApi
+
+tests/
+ ├── CustomerPortal.UnitTests
+ └── CustomerPortal.IntegrationTests
+
+clientapp/
+
+
+-------------------------------------------------------------
+Step 2 : สร้าง Feature แรก (Vertical Slice)
+
+Prompt
+
+Implement Customer Management feature.
+
+Requirements:
+
+- Customer Entity
+- Create Customer
+- Update Customer
+- Delete Customer
+- Get Customer By Id
+- Search Customers
+
+Follow all repository instructions.
+
+Generate backend only.
+
+ผลลัพธ์ที่คาดหวัง
+
+Entity
+DTO
+Service
+Validation
+Controller
+
+ครบตาม Standard
+-------------------------------------------------------------
+Step 3 : ตรวจสอบคุณภาพโค้ด
+
+Prompt
+
+Review the Customer Management implementation.
+
+Verify compliance with:
+
+- AGENTS.md
+- copilot-instructions.md
+- backend.instructions.md
+
+List all violations and propose fixes.
+
+ผลลัพธ์ที่คาดหวัง
+
+Agent ตรวจจับ
+
+DTO หาย
+Validation หาย
+Async ไม่ครบ
+
+
+-------------------------------------------------------------
+Step 4 : Generate Unit Tests
+
+Prompt
+
+Generate xUnit tests for Customer Management.
+
+Follow testing.instructions.md.
+
+Requirements:
+
+- Arrange Act Assert
+- Mock dependencies
+- Cover validation failures
+- Cover business rules
+
+ผลลัพธ์ที่คาดหวัง
+
+Test Naming ถูก
+AAA Pattern
+Mock Repository
+
+
+-------------------------------------------------------------
+Step 5 : Generate React Frontend
+
+Prompt
+
+Implement Customer Management UI.
+
+Requirements:
+
+- Customer List Page
+- Customer Create Page
+- Customer Edit Page
+
+Follow frontend.instructions.md.
+
+Use:
+
+- React
+- TypeScript
+- API Service Layer
+
+ผลลัพธ์ที่คาดหวัง
+
+pages/
+components/
+hooks/
+services/
+types/
+
+
+-------------------------------------------------------------
+Step 6 : Full Review
+
+Prompt
+
+Perform a repository review.
+
+Verify:
+
+- Architecture compliance
+- Coding standards
+- Security
+- Performance
+- Testing coverage
+
+Generate a review report.
+
+ผลลัพธ์ที่คาดหวัง
+
+Agent ทำหน้าที่เหมือน Code Reviewer
+
+
+-------------------------------------------------------------
+
+Step 7 : Refactoring Test
+
+Prompt
+
+Refactor the Customer Management feature.
+
+Requirements:
+
+- Preserve behavior
+- Follow all instruction files
+- Reduce duplication
+- Improve maintainability
+
+Generate a summary of changes.
+
+ผลลัพธ์ที่คาดหวัง
+
+Agent Refactor โดยไม่เปลี่ยน Logic
+
+-------------------------------------------------------------
+
+Step 8 : สร้าง Feature ใหม่จาก Prompt สั้น ๆ
+
+หลังจากทุกอย่างพร้อมแล้ว
+
+Prompt
+
+Create Product Management feature.
+
+หรือ
+
+Create Employee Management feature.

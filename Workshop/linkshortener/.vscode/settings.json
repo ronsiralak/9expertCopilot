@@ -1,0 +1,10 @@
+{
+    "chat.mcp.serverSampling": {
+        "linkshortener/.vscode/mcp.json: neon": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/auto"
+            ]
+        }
+    }
+}

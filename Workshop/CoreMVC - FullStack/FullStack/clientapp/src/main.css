@@ -1,0 +1,10 @@
+body { font-family: system-ui, sans-serif; margin: 0; color: #172033; background: #f5f7fb; }
+main { max-width: 960px; margin: auto; padding: 24px; }
+header { margin-bottom: 32px; font-size: 1.4rem; font-weight: bold; }
+a { color: #154fa0; }
+label { display: block; margin: 16px 0; }
+input { display: block; padding: 8px; width: min(100%, 400px); box-sizing: border-box; }
+button { padding: 6px 12px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 12px; border-bottom: 1px solid #d5dce7; text-align: left; }
+[role="alert"] { color: #a21c1c; }

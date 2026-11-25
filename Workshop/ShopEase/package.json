@@ -1,0 +1,14 @@
+{
+  "name": "shopease-copilot-training",
+  "version": "1.0.0",
+  "description": "GitHub Copilot Training Project — ShopEase E-Commerce App",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "node tests/utils.test.js && node tests/cart.test.js && node tests/wishlist.test.js && node tests/product-detail.test.js && node tests/theme.test.js && node tests/coupon.test.js && node tests/product-loading.test.js && node tests/checkout.test.js && node tests/admin.test.js",
+    "start": "npx serve . -p 3000"
+  },
+  "keywords": ["github-copilot", "training", "e-commerce", "javascript"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {}
+}

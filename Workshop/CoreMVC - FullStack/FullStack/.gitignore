@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+**/TestResults/
+clientapp/node_modules/
+clientapp/dist/
+.vs/
+.env
+.env.*
+*.user

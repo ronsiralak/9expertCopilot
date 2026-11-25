@@ -1,0 +1,22 @@
+# Bucks2Bar project instructions
+
+- Keep the app static and usable by opening `index.html` directly, without a server or build step.
+- Do not add a backend, local storage, or other data persistence unless explicitly requested.
+- Use the existing Bootstrap 5, Chart.js, and SheetJS integrations. External libraries are loaded from CDNs and require an internet connection.
+- Keep markup in `index.html`, custom styling in `style.css`, and application logic in `script.js`. Follow the existing simple JavaScript and CSS patterns.
+- Preserve the 12 monthly income and expense inputs, zero defaults, and automatic chart updates. Empty inputs are treated as zero in the chart and Excel export.
+- Keep Excel export as an `.xlsx` file and chart download as a PNG. Surface export or library-loading errors to the user.
+- Preserve accessible labels, tab semantics, and feedback for username validation. Update the README when changing user-facing behavior or setup.
+- Verify changes in a browser by opening `index.html` directly. For affected features, check chart updates, username validation, or exports as appropriate.
+- Keep existing CDN links for Bootstrap, Chart.js, and SheetJS intact.
+- Button background colors and other visual styles should be dark theme default and consistent with the existing design.
+- Maintain responsive layout and spacing as defined by Bootstrap classes, ensuring usability across different screen sizes.
+- Ensure all interactive elements, such as buttons and form inputs, are accessible via keyboard and provide appropriate focus indicators.
+- Maintain semantic HTML structure, using appropriate heading levels, landmarks, and ARIA attributes to support screen readers.
+- Ensure that all dynamic content updates, such as chart rendering and table updates, are announced to assistive technologies where applicable.
+- Test the application with screen readers and keyboard navigation to verify accessibility compliance.
+- Ensure that color contrast meets WCAG AA standards for readability in the dark theme.
+- Verify that all text, icons, and interactive elements remain legible and distinguishable against the dark background.
+- Ensure that any custom styles added to `style.css` do not break the existing dark theme or accessibility features.
+- When adding new features or modifying existing ones, maintain the overall user experience and visual consistency of the application.
+- Ensure that any new interactive elements or content updates follow the established accessibility and dark theme guidelines.

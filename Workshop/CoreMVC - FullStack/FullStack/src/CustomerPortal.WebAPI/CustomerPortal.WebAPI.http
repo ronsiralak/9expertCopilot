@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:5000
+@customerId = 00000000-0000-0000-0000-000000000000
+
+### Search customers
+GET {{baseUrl}}/api/customers?search=example
+
+### Get a customer (replace customerId)
+GET {{baseUrl}}/api/customers/{{customerId}}
+
+### Create a customer
+POST {{baseUrl}}/api/customers
+Content-Type: application/json
+
+{ "name": "Example Customer", "email": "customer@example.com" }
+
+### Update a customer
+PUT {{baseUrl}}/api/customers/{{customerId}}
+Content-Type: application/json
+
+{ "name": "Updated Customer", "email": "updated@example.com" }
+
+### Delete a customer
+DELETE {{baseUrl}}/api/customers/{{customerId}}
+
+### Invalid request
+POST {{baseUrl}}/api/customers
+Content-Type: application/json
+
+{ "name": "", "email": "invalid" }

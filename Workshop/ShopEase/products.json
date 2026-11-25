@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds Pro",
+    "category": "electronics",
+    "price": 79.99,
+    "rating": 4.5,
+    "reviews": 128,
+    "emoji": "🎧",
+    "stock": 15,
+    "description": "Premium sound quality with active noise cancellation"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch Series X",
+    "category": "electronics",
+    "price": 249.99,
+    "rating": 4.8,
+    "reviews": 256,
+    "emoji": "⌚",
+    "stock": 8,
+    "description": "Track your health metrics and stay connected"
+  },
+  {
+    "id": 3,
+    "name": "Classic White T-Shirt",
+    "category": "clothing",
+    "price": 24.99,
+    "rating": 4.2,
+    "reviews": 89,
+    "emoji": "👕",
+    "stock": 50,
+    "description": "100% organic cotton, perfect everyday essential"
+  },
+  {
+    "id": 4,
+    "name": "Running Sneakers",
+    "category": "clothing",
+    "price": 119.99,
+    "rating": 4.6,
+    "reviews": 312,
+    "emoji": "👟",
+    "stock": 22,
+    "description": "Lightweight and breathable for peak performance"
+  },
+  {
+    "id": 5,
+    "name": "JavaScript: The Good Parts",
+    "category": "books",
+    "price": 34.99,
+    "rating": 4.7,
+    "reviews": 601,
+    "emoji": "📗",
+    "stock": 30,
+    "description": "Essential reading for every JavaScript developer"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "category": "electronics",
+    "price": 59.99,
+    "rating": 4.3,
+    "reviews": 175,
+    "emoji": "🔊",
+    "stock": 0,
+    "description": "360° surround sound with 12-hour battery life"
+  },
+  {
+    "id": 7,
+    "name": "Cozy Hoodie",
+    "category": "clothing",
+    "price": 64.99,
+    "rating": 4.4,
+    "reviews": 143,
+    "emoji": "🧥",
+    "stock": 18,
+    "description": "Warm, soft, and perfect for cooler weather"
+  },
+  {
+    "id": 8,
+    "name": "Clean Code",
+    "category": "books",
+    "price": 39.99,
+    "rating": 4.9,
+    "reviews": 987,
+    "emoji": "📘",
+    "stock": 25,
+    "description": "A handbook of agile software craftsmanship"
+  }
+]

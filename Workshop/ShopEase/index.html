@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - E-Commerce Store</title>
+  <script src="src/theme.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="navbar">
+    <div class="navbar-brand">🛍️ ShopEase</div>
+    <nav class="navbar-links" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="products.html">Products</a>
+      <a href="wishlist.html">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="admin.html">Admin</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">🌙 Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="hero">
+      <h1>Welcome to ShopEase</h1>
+      <p>Your one-stop shop for everything you need</p>
+      <a href="products.html" class="btn-primary">Shop Now</a>
+    </div>
+
+    <section class="features">
+      <div class="feature-card">
+        <span class="feature-icon">🚀</span>
+        <h2>Fast Delivery</h2>
+        <p>Same-day delivery available</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <h2>Secure Payment</h2>
+        <p>256-bit SSL encryption</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">↩️</span>
+        <h2>Easy Returns</h2>
+        <p>30-day return policy</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="src/app.js"></script>
+  <script src="src/wishlist.js"></script>
+</body>
+</html>

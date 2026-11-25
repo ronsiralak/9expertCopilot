@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - ShopEase</title>
+  <script src="src/theme.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="navbar">
+    <div class="navbar-brand">🛍️ ShopEase</div>
+    <nav class="navbar-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="wishlist.html">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="admin.html">Admin</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">🌙 Dark mode</button>
+    </nav>
+  </header>
+
+  <main class="products-page" id="main-content" tabindex="-1">
+    <div class="products-header">
+      <h1>Our Products</h1>
+      <div class="filter-bar">
+        <label class="sr-only" for="search-input">Search products</label>
+        <input type="text" id="search-input" placeholder="Search products..." />
+        <label class="sr-only" for="category-filter">Filter by category</label>
+        <select id="category-filter">
+          <option value="">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="books">Books</option>
+        </select>
+        <label class="sr-only" for="sort-filter">Sort products</label>
+        <select id="sort-filter">
+          <option value="default">Sort by</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name A-Z</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="product-results-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    <div class="product-grid" id="product-grid">
+      <div class="loading-state" role="status"><span class="spinner" aria-hidden="true"></span> Loading products...</div>
+    </div>
+  </main>
+
+  <dialog class="quick-view-dialog" id="quick-view-dialog" aria-labelledby="quick-view-name" aria-describedby="quick-view-description">
+    <form method="dialog">
+      <button class="quick-view-close" type="submit" aria-label="Close quick view" autofocus>&times;</button>
+    </form>
+    <h2 id="quick-view-name"></h2>
+    <p id="quick-view-description"></p>
+    <p class="product-price" id="quick-view-price"></p>
+    <button class="btn-primary" id="quick-view-add" type="button" onclick="addQuickViewToCart()">Add to Cart</button>
+  </dialog>
+  <div id="app-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="src/app.js"></script>
+  <script src="src/wishlist.js"></script>
+  <script src="src/api.js"></script>
+  <script src="src/products.js"></script>
+</body>
+</html>

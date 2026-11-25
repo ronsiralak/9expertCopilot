@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - ShopEase</title>
+  <script src="src/theme.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="navbar">
+    <div class="navbar-brand">🛍️ ShopEase</div>
+    <nav class="navbar-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="wishlist.html">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="cart.html" aria-current="page">Cart (<span id="cart-count">0</span>)</a>
+      <a href="admin.html">Admin</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">🌙 Dark mode</button>
+    </nav>
+  </header>
+
+  <main class="cart-page" id="main-content" tabindex="-1">
+    <h1>Shopping Cart</h1>
+    <div class="cart-layout">
+      <div>
+        <p id="cart-status" role="status" aria-live="polite">Loading products...</p>
+        <p id="cart-feedback" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div class="cart-items" id="cart-items" role="region" tabindex="-1" aria-label="Cart items"></div>
+        <section id="checkout-content" hidden>
+          <h2>Demo Checkout</h2>
+          <p class="checkout-notice"><strong>Demo only:</strong> Do not enter real personal or card information. No payment or order will be processed.</p>
+          <p id="checkout-message" role="status" aria-live="polite"></p>
+          <form id="checkout-form" class="checkout-form" autocomplete="off" novalidate>
+            <fieldset>
+              <legend>Customer and shipping details</legend>
+              <label for="customer-name">Full name</label>
+              <input id="customer-name" type="text" required maxlength="100" aria-describedby="customer-name-error" />
+              <span class="field-error" id="customer-name-error" aria-live="polite"></span>
+              <label for="customer-email">Email</label>
+              <input id="customer-email" type="email" required maxlength="254" aria-describedby="customer-email-error" />
+              <span class="field-error" id="customer-email-error" aria-live="polite"></span>
+              <label for="customer-address">Shipping address</label>
+              <input id="customer-address" type="text" required maxlength="200" aria-describedby="customer-address-error" />
+              <span class="field-error" id="customer-address-error" aria-live="polite"></span>
+              <label for="customer-city">City</label>
+              <input id="customer-city" type="text" required maxlength="100" aria-describedby="customer-city-error" />
+              <span class="field-error" id="customer-city-error" aria-live="polite"></span>
+              <label for="customer-postal">Postal code</label>
+              <input id="customer-postal" type="text" required maxlength="20" aria-describedby="customer-postal-error" />
+              <span class="field-error" id="customer-postal-error" aria-live="polite"></span>
+            </fieldset>
+            <fieldset>
+              <legend>Test card details</legend>
+              <p>Use test card <strong>4242 4242 4242 4242</strong> and test security code <strong>123</strong>.</p>
+              <label for="card-name">Name on test card</label>
+              <input id="card-name" type="text" required maxlength="100" aria-describedby="card-name-error" />
+              <span class="field-error" id="card-name-error" aria-live="polite"></span>
+              <label for="card-number">Test card number</label>
+              <input id="card-number" type="text" inputmode="numeric" required maxlength="19" autocomplete="off" placeholder="4242 4242 4242 4242" aria-describedby="card-number-error" />
+              <span class="field-error" id="card-number-error" aria-live="polite"></span>
+              <label for="card-expiry">Expiration month</label>
+              <input id="card-expiry" type="month" required autocomplete="off" aria-describedby="card-expiry-error" />
+              <span class="field-error" id="card-expiry-error" aria-live="polite"></span>
+              <label for="card-cvv">Test security code</label>
+              <input id="card-cvv" type="text" inputmode="numeric" required maxlength="3" autocomplete="off" aria-describedby="card-cvv-error" />
+              <span class="field-error" id="card-cvv-error" aria-live="polite"></span>
+            </fieldset>
+            <button class="btn-primary" type="submit">Complete demo checkout</button>
+          </form>
+        </section>
+        <p id="checkout-result" role="status" aria-live="polite" tabindex="-1"></p>
+      </div>
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <form id="coupon-form" class="coupon-form">
+          <label for="coupon-code">Coupon code</label>
+          <div class="coupon-input-row">
+            <input id="coupon-code" type="text" autocomplete="off" aria-describedby="coupon-message" />
+            <button type="submit" class="btn-secondary">Apply</button>
+          </div>
+          <p id="coupon-message" role="status" aria-live="polite"></p>
+          <button id="coupon-remove" class="remove-btn" type="button" hidden>Remove coupon</button>
+        </form>
+        <div class="summary-row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+        <div class="summary-row"><span>Discount</span><span id="discount">$0.00</span></div>
+        <div class="summary-row"><span>Shipping</span><span id="shipping">$0.00</span></div>
+        <div class="summary-row"><span>Tax (7%)</span><span id="tax">$0.00</span></div>
+        <hr />
+        <div class="summary-row total"><span>Total</span><span id="total">$0.00</span></div>
+        <button class="btn-primary" id="checkout-btn" type="button" onclick="checkout()" disabled>Proceed to Checkout</button>
+        <button class="btn-secondary" type="button" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="app-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="src/app.js"></script>
+  <script src="src/wishlist.js"></script>
+  <script src="src/utils.js"></script>
+  <script src="src/api.js"></script>
+  <script src="src/cart.js"></script>
+  <script src="src/checkout.js"></script>
+</body>
+</html>
